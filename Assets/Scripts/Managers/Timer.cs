@@ -26,5 +26,10 @@ namespace Managers
 			secondsToAdd = Mathf.Max(secondsToAdd, 0);
 			_timer += secondsToAdd;
 		}
+
+		public string GetTimeLeftInSeconds()
+		{
+			return Mathf.Ceil(_timer).ToString();
+		}
 	}
 }

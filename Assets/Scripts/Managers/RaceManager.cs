@@ -27,6 +27,7 @@ public class RaceManager : MonoBehaviour
 
 	private void Update()
 	{
+
 		if (_state == RaceState.Racing)
 		{
 			_timer.TickTimer();
@@ -75,5 +76,10 @@ public class RaceManager : MonoBehaviour
 	public bool IsRaceActive()
 	{
 		return _state == RaceState.Racing;
+	}
+
+	public Timer GetRaceTimer()
+	{
+		return _timer;
 	}
 }
